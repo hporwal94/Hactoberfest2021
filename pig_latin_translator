@@ -1,0 +1,13 @@
+# user inputs
+text = raw_input('Enter the text that needs to be translated into pig latin: ')
+print('You entered: ', text)
+
+text = text.split(' ')
+
+for i in text:
+  if len(i) >= 5:
+    i = i + '%say' % (i[0])
+    i = i[1:]
+    print i
+  else:
+    pass
